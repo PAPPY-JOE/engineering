@@ -8,9 +8,9 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "JIL"
+title                    : "Joseph Fatoye"
 title_separator          : "-"
-name                     : &name "Joseph Fatoye"
+name                     : # &name "Joseph Fatoye"
 description              : &description "personal description"
 url                      : https://pappy-joe.github.io/engineering/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -23,8 +23,8 @@ author:
   # Biographic information
   avatar           : "Portrait.jpeg"
   name             : "Joseph Fatoye"
-  pronouns         : "he/him"  
-  bio              : "As an aspiring Mechatronics engineering professional, I am passionate about pushing the boundaries of the field of intelligent robotics."
+  pronouns         : # "he/him"  
+  bio              : "As an aspiring Mechatronics Engineering professional, I am passionate about pushing the boundaries of the field of Cognitive Robotics."
   location         : "Nigeria"
   employer         : "Bowen University"
   uri              : # URL

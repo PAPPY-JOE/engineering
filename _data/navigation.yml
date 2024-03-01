@@ -2,10 +2,10 @@
 main:
   - title: "CV"
     # url: /cv/
-    url: /files/Fatoye_Joseph_Resume.pdf
+    url: /files/Fatoye_Joseph_Resume.PDF
     
-  - title: "Portfolio"
-    url: /portfolio/
+  # - title: "Portfolio"
+  #   url: /portfolio/
 
   - title: "Publications"
     url: /publications/    
