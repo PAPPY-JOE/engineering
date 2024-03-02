@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "JIL"
+title                    : "Jay's Homepage"
 title_separator          : "-"
 name                     : # &name "Joseph Fatoye"
 description              : &description "personal description"
@@ -22,7 +22,7 @@ repository               : "engineering/PAPPY-JOE.github.io"
 author:
   # Biographic information
   avatar           : "Portrait.jpeg"
-  name             : "Joseph Fatoye"
+  name             : "Joseph (O) Fatoye"
   pronouns         : # "he/him"  
   bio              : "As an aspiring Mechatronics Engineering professional, I am passionate about pushing the boundaries of the field of Cognitive Robotics."
   location         : "Nigeria"
