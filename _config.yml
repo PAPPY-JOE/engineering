@@ -25,8 +25,8 @@ author:
   name             : "Joseph (O) Fatoye"
   pronouns         : # "he/him"  
   bio              : "As an aspiring Mechatronics Engineering professional, I am passionate about pushing the boundaries of the field of Cognitive Robotics."
-  location         : "Nigeria"
-  employer         : "Bowen University"
+  location         : # "Nigeria"
+  employer         : # "Bowen University"
   uri              : # URL
   email            : "fatoyejoseph@gmail.com" 
 
