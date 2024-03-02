@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Hi there! I am an fourth year undergraduate student majoring in Mechatronics Engineering at Bowen University with keen interest in developing Intelligent Robotic models.
+Hi there! I am an fourth year undergraduate student majoring in Mechatronics Engineering at Bowen University with a keen interest in developing Intelligent Robotic models.
 
 Recently, I was selected as an **AAAI-24 UC Scholar**.
 
