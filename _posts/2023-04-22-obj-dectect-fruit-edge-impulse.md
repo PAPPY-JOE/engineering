@@ -24,7 +24,7 @@ My group was tasked with sorting oranges and cherries.
 * Bought a lot of oranges and cherries
 * Started training the neural model
 
-![Real-world Data Results](/images/blogs/obj-dect-fruit-edge-impulse/obj-dect-fruit-edge-impulse-real-world.jpeg){: .align-right width="350px"}
+![Real-world Data Results](/images/obj-dect-fruit-edge-impulse-real-world.jpeg){: .align-right width="350px"}
 
 ### Challenges Faced
 * Off season for oranges
