@@ -2,7 +2,7 @@
 title: 'Object Detection Fruit Sorting with Edge Impulse'
 date: 2023-04-22  
 permalink: /posts/2023/04/obj-dectect-fruit-edge-impulse
-excerpt: "<img src='/images/blogs/obj-dect-fruit-edge-impulse/obj-dect-fruit-edge-impulse-real-world.jpeg'>"
+# excerpt: "<img src='/images/blogs/obj-dect-fruit-edge-impulse/obj-dect-fruit-edge-impulse-real-world.jpeg'>"
 tags:
   - class project
   - computer vision
@@ -10,7 +10,7 @@ tags:
 ---
 
 ### Description
-Trained a neural model to identify simple fruits in the immediate environment. 90/100 training performance and 84.62/100 real-world success rate. This was a class Project.
+Trained a neural model to identify simple fruits in the immediate environment. 90% training performance and 84.62% real-world success rate. This was a class Project.
 
 ![Testing Data Results](/images/blogs/obj-dect-fruit-edge-impulse/obj-dect-fruit-edge-impulse-testing.jpeg){: .align-right width="350px"}
 ### Task
@@ -28,7 +28,7 @@ My group was tasked with sorting oranges and cherries.
 
 ### Challenges Faced
 * Off season for oranges
-<pre> By the way, are oranges called oranges because oranges are orange?</pre>
+>By the way, are oranges called oranges because oranges are orange?👀
 * Variable lighting conditions in training image data
 * Classification problems for similar looking fruits
 
