@@ -12,9 +12,8 @@ tags:
 ### Description
 Trained a neural model to identify and classify simple fruits in the immediate environment. 90% training performance and 84.62% real-world success rate. This was a class Project.
 
-![Testing Data Results](https://pappy-joe.github.io/engineering/images/blogs/obj-dect-fruit-edge-impulse/obj-dect-fruit-edge-impulse-testing.jpeg){: .align-right width="350px"}
 ### Task
-> "Create a model that identifies and correctly classifies objects, and in real time. For this course we'll be grouping you all in groups of tens <br/>...We'll be using Edge Impulse for this project as well." &#8211; Dr. Segun Adebayo
+> "Create a model that identifies and correctly classifies objects, and in real time. For this course we'll be grouping you all in groups of tens <br/>...We'll be using Edge Impulse for this project as well."<br/> &#8211; Dr. Segun Adebayo
 
 My group was tasked with sorting oranges and cherries.
 
@@ -24,7 +23,6 @@ My group was tasked with sorting oranges and cherries.
 * Bought a lot of oranges and cherries
 * Started training the neural model
 
-![Real-world Data Results](https://pappy-joe.github.io/engineering/images/blogs/obj-dect-fruit-edge-impulse/obj-dect-fruit-edge-impulse-real-world.jpeg){: .align-right width="350px"}
 
 ### Challenges Faced
 * Off season for oranges
@@ -36,6 +34,12 @@ My group was tasked with sorting oranges and cherries.
 * Last training performance (validation set) F1 SCORE = 90.0%
 * Model testing results: ACCURACY = 84.62%
 * Lots of oranges and cherries to go around for group members 😁
+
+![Training Performance Results](https://pappy-joe.github.io/engineering/images/blogs/obj-dect-fruit-edge-impulse/obj-dect-fruit-edge-impulse-testing.jpeg){: .align-center}
+<i>Training Performance</i>
+
+![Real-world Data Results](https://pappy-joe.github.io/engineering/images/blogs/obj-dect-fruit-edge-impulse/obj-dect-fruit-edge-impulse-real-world.jpeg){: .align-center}
+<i>Real-world Model Testing Results</i>
 
 ### Acknowledgements
 * Dr. Segun Adebayo

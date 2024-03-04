@@ -12,7 +12,7 @@ tags:
 ---
 
 ### Description
-Captained a team of four Mechatronics Engineering undergraduate colleagues to build a single-axis solar tracker system that maximizes solar energy generation, leveraging Arduino and accessible electronic components. This was a class project.
+I captained a team of four Mechatronics Engineering undergraduate colleagues to build a single-axis solar tracker system that maximizes solar energy generation, leveraging Arduino and accessible electronic components. This was a class project.
 
 ### Skills 
 * C++ using Arduino IDE
@@ -20,9 +20,8 @@ Captained a team of four Mechatronics Engineering undergraduate colleagues to bu
 * 3D model slicing and optimisation using UltiMaker Cura
 * 3D printing using Creality Ender-3 3D printer
 
-![Testing Phase Results](https://pappy-joe.github.io/engineering/images/blogs/sunflower-solar-tracker/schematic-wokwi.jpeg){: .align-right width="350px"}
 ### Task
-> "Come up with multiple mini project ideas, from which you will be assigned only one, the best, to build. For this course we'll be grouping you all in groups of fives <br/>...There are no restrictions to your imagination, only cost and time feasibility." &#8211; Dr. Segun Adebayo
+> "Come up with multiple mini project ideas, from which you will be assigned only one, the best, to build. For this course we'll be grouping you all in groups of fives <br/>...There are no restrictions to your imagination, only cost and time feasibility." <br/>&#8211; Dr. Segun Adebayo
 
 My group agreed on and was tasked with building a sunflower solar tracker, courtsey of Awani Toritseju.
 
@@ -34,17 +33,33 @@ My group agreed on and was tasked with building a sunflower solar tracker, court
 * Started building the first prototype with a carton frame
 * Started building the second and final prototype with a 3D printed frame
 
-![Testing Phase Results](https://pappy-joe.github.io/engineering/images/blogs/sunflower-solar-tracker/testing-phase.jpg){: .align-right width="350px"}
+![Functional block diagram](https://pappy-joe.github.io/engineering/images/blogs/sunflower-solar-tracker/func-blk-drgm.jpeg){: .align-center}
+
+![Schematic diagram of electric circuit](https://pappy-joe.github.io/engineering/images/blogs/sunflower-solar-tracker/schematic-wokwi.jpeg){: .align-left}
+
+![Schematic diagram of electric circuit](https://pappy-joe.github.io/engineering/images/blogs/sunflower-solar-tracker/lcd-wiring.jpeg){: .align-right}
 
 ### Challenges Faced
 * Hardware issues with Arduino Nano
 * Prolonged duration for 3D printed final case
 * Assembly
 * Financial constraints
+* Availability of electronics components
+
+![Arduino Code](https://pappy-joe.github.io/engineering/images/blogs/sunflower-solar-tracker/arduino-code-1.jpeg){: .align-left width="400px"}
+![Arduino Code](https://pappy-joe.github.io/engineering/images/blogs/sunflower-solar-tracker/arduino-code-2.jpeg){: .align-left width="400px"}
+<i>Arduino code</i>
+
 
 ### Results
 * Successful single-axis solar tracker
 * Up to 25% increase in solar energy generation
+
+![Testing Phase Results](https://pappy-joe.github.io/engineering/images/blogs/sunflower-solar-tracker/testing-phase.jpg){: .align-left width="400px"}
+<i class="align-left">First prototype</i>
+
+![3D Printed Enclosure](https://pappy-joe.github.io/engineering/images/blogs/sunflower-solar-tracker/3D-printed-enclosure.jpeg){: .align-right width="400px"}
+<i class="align-right">3D printed enclosure</i>
 
 ### Acknowledgements
 * Instructors:
