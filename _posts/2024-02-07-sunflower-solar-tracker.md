@@ -12,7 +12,7 @@ tags:
 ---
 
 ### Description
-Captained a team of four Mechatronics Engineering undergraduate colleagues to build a single-axis solar tracker system to maximize solar energy generation, leveraging Arduino and accessible electronic components. This was a class project.
+Captained a team of four Mechatronics Engineering undergraduate colleagues to build a single-axis solar tracker system that maximizes solar energy generation, leveraging Arduino and accessible electronic components. This was a class project.
 
 ### Skills 
 * C++ using Arduino IDE
@@ -20,7 +20,7 @@ Captained a team of four Mechatronics Engineering undergraduate colleagues to bu
 * 3D model slicing and optimisation using UltiMaker Cura
 * 3D printing using Creality Ender-3 3D printer
 
-![Testing Phase Results](/images/schematic-wokwi.jpeg){: .align-right width="350px"}
+![Testing Phase Results](https://pappy-joe.github.io/engineering/images/blogs/sunflower-solar-tracker/schematic-wokwi.jpeg){: .align-right width="350px"}
 ### Task
 > "Come up with multiple mini project ideas, from which you will be assigned only one, the best, to build. For this course we'll be grouping you all in groups of fives <br/>...There are no restrictions to your imagination, only cost and time feasibility." &#8211; Dr. Segun Adebayo
 
@@ -34,7 +34,7 @@ My group agreed on and was tasked with building a sunflower solar tracker, court
 * Started building the first prototype with a carton frame
 * Started building the second and final prototype with a 3D printed frame
 
-![Testing Phase Results](/images/blogs/sunflower-solar-tracker/testing-phase.jpg){: .align-right width="350px"}
+![Testing Phase Results](https://pappy-joe.github.io/engineering/images/blogs/sunflower-solar-tracker/testing-phase.jpg){: .align-right width="350px"}
 
 ### Challenges Faced
 * Hardware issues with Arduino Nano
