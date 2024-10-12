@@ -7,9 +7,9 @@ redirect_from:
   - /about.html
 ---
 
-Hi there! I am a fourth year undergraduate student majoring in Mechatronics Engineering at Bowen University with a keen interest in developing Intelligent Robotic models.
+Watching Enthiran (Robot), a 2010 Indian Tamil-language science fiction film, during my junior secondary school years sparked my fascination with intelligent robots and AI ethics. The story of Chitti, a robot who develops human emotions and goes rogue, ignited my desire to explore how robots can be intelligent yet morally guided. This passion has taken me on a unique journey—embracing Christianity as a foundation for my ethical decisions and pursuing a degree in Mechatronics Engineering at Bowen University, where I focus on AI and Robotics research. 
 
-> Humans aren’t intelligent because they can play chess, but because they can learn anything. <br/> Now replace “Humans” with “AI systems”
+>  I envision a future where robots become as integral to daily life as mobile phones are today.
 
 Recently, I was selected as an **AAAI-24 UC Scholar**. The 38th Annual AAAI Conference on Artificial Intelligence, which was held in Vancouver, Canada (Feb. 2024), afforded me the opportunity to meet with top researchers and industry giants, as well as talented peers from around the world. This has broadened my perspective and increased my knowledge and passion for the field.
 
@@ -20,6 +20,5 @@ With a dedication to lifelong learning and a passion for Robotics, I am excited 
 
 ### Research Interests
   * Cognitive Robotics
-  * Reinforcement Learning
+  * vSLAM
   * Computer Vision
-  * NLP
