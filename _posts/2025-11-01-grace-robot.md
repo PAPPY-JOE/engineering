@@ -1,21 +1,19 @@
 ---
-
-title: 'GRACE: Autonomous Healthcare Service Robot Using Visual SLAM and Semantic Scene Understanding'
+title: "GRACE: Autonomous Healthcare Service Robot Using Visual SLAM and Semantic Scene Understanding"
 date: 2025-11-01
 permalink: /posts/2025/11/grace-autonomous-healthcare-service-robot
 
 tags:
-    - robotics
-    - autonomous systems
-    - healthcare robotics
-    - visual SLAM
-    - computer vision
-    - OCR
-    - embedded AI
-    - Raspberry Pi
-    - navigation
-    - perception
-
+  - robotics
+  - autonomous systems
+  - healthcare robotics
+  - visual SLAM
+  - computer vision
+  - OCR
+  - embedded AI
+  - Raspberry Pi
+  - navigation
+  - perception
 ---
 
 ### Description
@@ -28,27 +26,27 @@ The system was designed around a practical constraint: enabling autonomous navig
 
 ### Research Motivation
 
-Healthcare environments contain many visually meaningful cues—such as room names, signs, and labels—that can help robots understand where they are and where they need to go.
+Healthcare environments contain many visually meaningful cues, such as room names, signs, and labels, that can help robots understand where they are and where they need to go.
 
 Rather than relying solely on geometric localization, GRACE combines **visual SLAM with text recognition** to associate physical locations with semantic information.
 
 This creates a perception pipeline that allows a robot to reason about both:
 
-* **Where am I?**
-* **What does this location represent?**
+- **Where am I?**
+- **What does this location represent?**
 
 ### System Architecture
 
 The robot integrates:
 
-* Raspberry Pi 5
-* Microsoft LifeCam Cinema HD camera
-* ORB-SLAM3
-* EasyOCR
-* Embedded navigation
-* Ultrasonic sensors
-* 4WD mobile robot platform
-* Flask-based teleoperation interface
+- Raspberry Pi 5
+- Microsoft LifeCam Cinema HD camera
+- ORB-SLAM3
+- EasyOCR
+- Embedded navigation
+- Ultrasonic sensors
+- 4WD mobile robot platform
+- Flask-based teleoperation interface
 
 ### Perception Pipeline
 
@@ -70,12 +68,12 @@ Running the complete perception pipeline on a Raspberry Pi 5 introduced signific
 
 I worked on integrating:
 
-* Visual SLAM
-* OCR
-* Camera processing
-* Pose estimation
-* Semantic association
-* Embedded computation
+- Visual SLAM
+- OCR
+- Camera processing
+- Pose estimation
+- Semantic association
+- Embedded computation
 
 within a resource-constrained robotic platform.
 
@@ -89,8 +87,8 @@ The test environment incorporated signage representing healthcare locations and 
 
 The system achieved approximately:
 
-* **0.28 m Absolute Pose Error RMSE**
-* **>90% semantic association accuracy** at a confidence threshold of 0.80
+- **0.28 m Absolute Pose Error RMSE**
+- **>90% semantic association accuracy** at a confidence threshold of 0.80
 
 The results demonstrated the feasibility of combining visual localization with semantic text recognition on low-cost embedded hardware.
 
@@ -104,24 +102,24 @@ Rather than treating OCR as an independent perception task, the system incorpora
 
 The approach could support future robotic systems for:
 
-* Healthcare facility navigation
-* Delivery of supplies
-* Patient assistance
-* Hospital logistics
-* Indoor service robotics
-* Infrastructure-free robotic deployment
+- Healthcare facility navigation
+- Delivery of supplies
+- Patient assistance
+- Hospital logistics
+- Indoor service robotics
+- Infrastructure-free robotic deployment
 
 ### Broader Research Direction
 
 GRACE shaped my current research interests in:
 
-* Autonomous navigation
-* Visual perception
-* Embedded AI
-* Safe robotic systems
-* Perception-driven control
-* Healthcare robotics
-* Robotics in unstructured environments
+- Autonomous navigation
+- Visual perception
+- Embedded AI
+- Safe robotic systems
+- Perception-driven control
+- Healthcare robotics
+- Robotics in unstructured environments
 
 It also motivated my interest in developing autonomous systems that can operate reliably when sensing is noisy, computational resources are limited, and real-world environments are unpredictable.
 
