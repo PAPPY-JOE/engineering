@@ -1,45 +1,69 @@
 ---
-title: 'Object Detection Fruit Sorting with Edge Impulse'
-date: 2023-04-22  
-permalink: /posts/2023/04/obj-dectect-fruit-edge-impulse
-# excerpt: "<img src='/images/blogs/obj-dect-fruit-edge-impulse/obj-dect-fruit-edge-impulse-real-world.jpeg'>"
+title: 'Real-Time Fruit Classification with Edge Impulse'
+date: 2023-04-22
+permalink: /posts/2023/04/real-time-fruit-classification-edge-impulse
+
 tags:
-  - class project
+  - embedded AI
+  - TinyML
   - computer vision
-  - AI
+  - Edge Impulse
+  - machine learning
+  - class project
+
 ---
 
 ### Description
-Trained a neural model to identify and classify simple fruits in the immediate environment. 90% training performance and 84.62% real-world success rate. This was a class Project.
+
+As an early exploration of embedded machine learning, I worked with a team to develop a real-time image classification system capable of distinguishing between oranges and cherries.
+
+The project introduced me to the practical challenges of collecting image datasets, training lightweight neural networks, and deploying computer vision models to resource-constrained hardware.
 
 ### Task
-> "Create a model that identifies and correctly classifies objects, and in real time. For this course we'll be grouping you all in groups of tens <br/>...We'll be using Edge Impulse for this project as well."<br/> &#8211; Dr. Segun Adebayo
 
-My group was tasked with sorting oranges and cherries.
+The objective was to develop a model capable of identifying and classifying physical objects in real time using Edge Impulse.
 
-### Steps
-* Gathered as a group
-* Assigned individual tasks
-* Bought a lot of oranges and cherries
-* Started training the neural model
+Our team was assigned two classes:
 
+* Orange
+* Cherry
 
-### Challenges Faced
-* Off season for oranges
->By the way, are oranges called oranges because oranges are orange?👀
-* Variable lighting conditions in training image data
-* Classification problems for similar looking fruits
+### Approach
+
+We collected images of both fruit classes under different conditions and trained a lightweight image classification model using Edge Impulse.
+
+The development process involved:
+
+* Dataset collection
+* Image labeling
+* Model training
+* Validation
+* Real-world testing
+* Iterative debugging
+
+### Challenges
+
+The project exposed several practical issues associated with computer vision systems:
+
+* Limited availability of oranges during the off-season
+* Variable lighting conditions
+* Similar visual characteristics between classes
+* Differences between training images and real-world inputs
+
+These challenges demonstrated that model performance depends heavily on the quality and diversity of the training data.
 
 ### Results
-* Last training performance (validation set) F1 SCORE = 90.0%
-* Model testing results: ACCURACY = 84.62%
-* Lots of oranges and cherries to go around for group members 😁
 
-![Training Performance Results](https://pappy-joe.github.io/engineering/images/blogs/obj-dect-fruit-edge-impulse/obj-dect-fruit-edge-impulse-testing.jpeg){: .align-center}
-<i>Training Performance</i>
+The final training run achieved:
 
-![Real-world Data Results](https://pappy-joe.github.io/engineering/images/blogs/obj-dect-fruit-edge-impulse/obj-dect-fruit-edge-impulse-real-world.jpeg){: .align-center}
-<i>Real-world Model Testing Results</i>
+* **Validation F1-score:** 90.0%
+* **Real-world testing accuracy:** 84.62%
+
+### Reflection
+
+This project was my early hands-on introduction to **computer vision and embedded machine learning**. It later influenced my interest in deploying intelligent perception systems directly onto constrained hardware.
+
+It also provided the foundation for subsequent work involving TinyML, embedded vision, and autonomous robotics.
 
 ### Acknowledgements
 * Dr. Segun Adebayo

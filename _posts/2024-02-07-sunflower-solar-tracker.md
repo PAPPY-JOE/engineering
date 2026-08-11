@@ -1,145 +1,85 @@
 ---
+
 title: 'Sunflower Solar Tracker System'
 date: 2024-02-07
 permalink: /posts/2024/02/sunflower-solar-tracker
-# excerpt: "<img src='/images/blogs/obj-dect-fruit-edge-impulse/obj-dect-fruit-edge-impulse-real-world.jpeg'>"
+
 tags:
-  - class project
-  - arduino
+  - mechatronics
+  - Arduino
+  - control systems
   - electronics
-  - 3D modelling
+  - CAD
   - 3D printing
+  - class project
+
 ---
 
 ### Description
-I captained a team of four Mechatronics Engineering undergraduate colleagues to build a single-axis solar tracker system that maximizes solar energy generation, leveraging Arduino and accessible electronic components. This was a class project.
 
-### Skills 
-* C++ using Arduino IDE
-* 3D modelling using Solid Works
-* 3D model slicing and optimisation using UltiMaker Cura
-* 3D printing using Creality Ender-3 3D printer
+I led a four-member team in designing and building a single-axis solar tracking system inspired by the movement of a sunflower.
 
-### Task
-> "Come up with multiple mini project ideas, from which you will be assigned only one, the best, to build. For this course we'll be grouping you all in groups of fives <br/>...There are no restrictions to your imagination, only cost and time feasibility." <br/>&#8211; Dr. Segun Adebayo
+The system automatically adjusted the orientation of a solar panel based on differential light measurements, using an Arduino-based feedback loop and servo actuator.
 
-My group agreed on and was tasked with building a sunflower solar tracker, courtsey of Awani Toritseju.
+### Technical Implementation
 
-### Steps
-* Gathered as a group
-* Assigned individual tasks
-* Ran simulations of the project
-* Purchased needed electronics components
-* Started building the first prototype with a carton frame
-* Started building the second and final prototype with a 3D printed frame
-<br/>
+The system combined:
 
-![Functional block diagram](https://pappy-joe.github.io/engineering/images/blogs/sunflower-solar-tracker/func-blk-drgm.jpeg){: .align-center}
+* Arduino-based control
+* Light-dependent resistors for light sensing
+* Servo actuation
+* LCD feedback
+* Custom 3D-printed mechanical components
+* SolidWorks CAD modelling
+* Cura-based slicing and print optimization
 
-![Schematic diagram of electric circuit](https://pappy-joe.github.io/engineering/images/blogs/sunflower-solar-tracker/lcd-wiring.jpeg){: .align-right width="350px" height="350px"}
+### Control Strategy
 
-![Schematic diagram of electric circuit](https://pappy-joe.github.io/engineering/images/blogs/sunflower-solar-tracker/schematic-wokwi.jpeg){: .align-left width="350px" height="350px"}
+Two light sensors measured the relative intensity of incident light.
 
-<br/>
-<br/>
+The controller calculated the difference between the two measurements and adjusted the servo position whenever the difference exceeded a predefined threshold.
 
-### Code
-```python
-#include <Servo.h>
-#include <LiquidCrystal.h>
+This provided a simple closed-loop tracking mechanism that continuously moved the panel toward the stronger light source.
 
-// Servo
-#define error 250
-Servo servo;
-int servoPosition =  7.5;
+### Development Process
 
-// LCD
-const int rs = 9, en = 8, d4 = 5, d5 = 4, d6 = 3, d7 = 2;
-LiquidCrystal lcd(rs, en, d4, d5, d6, d7); 
+The project progressed through several stages:
 
-// Main code
-void setup() {
-  Serial.begin(9600); // Debugging code
-
-  // Servo
-  servo.attach(12);
-  servo.write(servoPosition);
-  delay(1000);
-
-  // LCD
-  lcd.begin(16, 2);
-  delay(1000);
-  lcd.print("Group X");
-  lcd.setCursor(0, 2);
-  lcd.print("MCE 417");
-
-}
-
-void loop() {
-  int R1 = analogRead(A0);
-  int R2 = analogRead(A1);
-  int diff = abs(R1 - R2);
-
-  Serial.print(R1); // Debugging code
-  Serial.print(", "); // Debugging code
-  Serial.println(R2); // Debugging code
-
-  if (diff > error) {
-    if (R1 > R2) {
-      servoPosition = --servoPosition;
-      Serial.println("R1 >>>"); // Debugging code
-      lcd.print("R1 >>>"); // Debugging code
-    }
-    if (R1 < R2) {
-      servoPosition = ++servoPosition;
-      Serial.println("R2 >>>"); // Debugging code
-      lcd.print("R2 >>>"); // Debugging code
-    }
-
-  } else {
-      Serial.println("R1 = R2"); // Debugging code
-      lcd.println("R1 = R2"); // Debugging code
-  }
-
-  servoPosition = constrain(servoPosition, 0, 10); // Control code 
-  servo.write(servoPosition); 
-  Serial.print("servoPosition: "); // Debugging code
-  Serial.println(servoPosition); // Debugging code
-  delay(50);
-
-}
-```
-
-### Challenges Faced
-* Hardware issues with Arduino Nano
-* Prolonged duration for 3D printed final case
-* Assembly
-* Financial constraints
-* Availability of electronics components
-<br/>
-
-<!-- ![Arduino Code](https://pappy-joe.github.io/engineering/images/blogs/sunflower-solar-tracker/arduino-code-1.jpeg){: .align-left width="350px"} -->
-<!-- ![Arduino Code](https://pappy-joe.github.io/engineering/images/blogs/sunflower-solar-tracker/arduino-code-2.jpeg){: .align-left width="350px"} -->
-<!-- <i>Arduino code</i> -->
-
+1. Concept development
+2. Simulation and design
+3. Electronics integration
+4. Initial prototype using a temporary frame
+5. Mechanical redesign
+6. 3D printing
+7. Final assembly and testing
 
 ### Results
-* Successful single-axis solar tracker
-* Up to 25% increase in solar energy generation
+
+The final prototype successfully tracked the direction of maximum detected light and achieved an observed increase of approximately **25% in solar energy generation** compared with the stationary configuration during testing.
+
+### Engineering Challenges
+
+* Arduino hardware issues
+* Mechanical assembly
+* Component availability
+* Limited project budget
+* 3D-printing time constraints
+
+### Skills Developed
+
+* Embedded C++
+* Feedback control
+* Arduino development
+* SolidWorks
+* 3D printing
+* Electronics integration
+* Rapid prototyping
 
 ### Acknowledgements
-* Instructors:
-  * Dr. Segun Adebayo
-  * Mrs. Kehinde
-* My group members: 
-  * Toritseju Regina Awani
-  * Subuola Emmanuel Ilori 
-  * Temitayo Jesimiel Adenuga
-* Other contributors:
-  * Etuk Ifiok
-  * Engr. Ogar
-  * Lab Technician 
 
-![Testing Phase Results](https://pappy-joe.github.io/engineering/images/blogs/sunflower-solar-tracker/testing-phase.jpg){: .align-left width="350px"}
-
-![3D Printed Enclosure](https://pappy-joe.github.io/engineering/images/blogs/sunflower-solar-tracker/3D-printed-enclosure.jpeg){: .align-right width="350px"}
+* Dr. Segun Adebayo
+* Mrs. Kehinde
+* Toritseju Regina Awani
+* Subuola Emmanuel Ilori
+* Temitayo Jesimiel Adenuga
+* Other engineering and laboratory contributors
