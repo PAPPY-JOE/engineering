@@ -22,13 +22,13 @@ repository               : "engineering/PAPPY-JOE.github.io"
 author:
   # Biographic information
   avatar           : "Portrait.jpeg"
-  name             : "Joseph (O) Fatoye"
-  pronouns         : # "he/him"  
-  bio              : "As an aspiring Mechatronics Engineering professional, I am passionate about pushing the boundaries of the field of Cognitive Robotics."
-  location         : # "Nigeria"
-  employer         : # "Bowen University"
-  uri              : # URL
-  email            : "fatoyejoseph@gmail.com" 
+  name             : "Joseph Olayemi Fatoye"
+  pronouns         : # "he/him"
+  bio              : "Mechatronics engineer and robotics researcher working on visual perception, autonomous navigation, embedded AI, and safe intelligent robotic systems."
+  location         : "Nigeria"
+  employer         : #
+  uri              : "https://pappy-joe.github.io/engineering"
+  email            : "fatoyejoseph@gmail.com"
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
@@ -56,7 +56,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : "joseph-fatoye-640164235"
+  linkedin         : "josephfatoye"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
