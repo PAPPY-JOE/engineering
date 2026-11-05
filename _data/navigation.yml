@@ -1,23 +1,11 @@
-# main links links
 main:
-  - title: "CV"
-    # url: /cv/
-    url: /files/Joseph_Fatoye_CV.pdf
-    
-  # - title: "Portfolio"
-  #   url: /portfolio/
-
+  - title: "Research"
+    url: /research/
   - title: "Publications"
-    url: /publications/    
-        
-  - title: "Blog Posts"
-    url: /year-archive/
-
-  # - title: "Talks"
-  #   url: /talks/    
-
-  # - title: "Teaching"
-  #   url: /teaching/      
-    
-  # - title: "Guide"
-  #   url: /markdown/
+    url: /publications/
+  - title: "Talks"
+    url: /talks/
+  - title: "CV"
+    url: /cv/
+  - title: "Contact"
+    url: /contact/

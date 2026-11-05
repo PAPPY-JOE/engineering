@@ -8,13 +8,13 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Home"
+title                    : "Joseph Fatoye"
 title_separator          : "-"
 name                     : &name "Joseph Fatoye"
-description              : &description "personal description"
-url                      : https://pappy-joe.github.io/engineering/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "engineering/PAPPY-JOE.github.io"
+description              : &description "Robotic perception and embedded systems. Joseph Fatoye builds visual perception pipelines for physical robots."
+url                      : https://pappy-joe.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl                  : "/engineering" # the subpath of your site, e.g. "/blog"
+repository               : "PAPPY-JOE/engineering"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -24,7 +24,7 @@ author:
   avatar           : "Portrait.jpeg"
   name             : "Joseph Olayemi Fatoye"
   pronouns         : # "he/him"
-  bio              : "Mechatronics engineer and robotics researcher working on visual perception, autonomous navigation, embedded AI, and safe intelligent robotic systems."
+  bio              : "Mechatronics engineer working on reliable visual perception and embedded robotic systems."
   location         : "Nigeria"
   employer         : #
   uri              : "https://pappy-joe.github.io/engineering"
@@ -146,6 +146,7 @@ include:
   - _pages
   - files
 exclude:
+  - REVIEW.md
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache
@@ -279,7 +280,7 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: America/Los_Angeles # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Africa/Lagos # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins

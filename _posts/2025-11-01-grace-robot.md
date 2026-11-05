@@ -1,138 +1,58 @@
 ---
-title: "GRACE: Autonomous Healthcare Service Robot Using Visual SLAM and Semantic Scene Understanding"
+layout: research
+title: "GRACE: stable semantic perception on embedded hardware"
 date: 2025-11-01
-permalink: /posts/2025/11/grace-autonomous-healthcare-service-robot
-
-tags:
-  - robotics
-  - autonomous systems
-  - healthcare robotics
-  - visual SLAM
-  - computer vision
-  - OCR
-  - embedded AI
-  - Raspberry Pi
-  - navigation
-  - perception
+modified: 2026-11-05
+permalink: /posts/2025/11/grace-autonomous-healthcare-service-robot/
+redirect_from:
+  - /posts/2025/11/grace-autonomous-healthcare-service-robot.html
+description: "Integrating visual SLAM and asynchronous OCR on a Raspberry Pi 5, from the undergraduate platform to the ICAIR 2026 study."
+tags: [robotics, visual SLAM, embedded AI, OCR]
 ---
+<div class="prose" markdown="1">
+![GRACE mobile robotic platform]({{ site.baseurl }}/images/research/grace-robot.jpg)
 
-### Description
+GRACE began as my undergraduate final-year project in Mechatronics Engineering at Bowen University. I continued the research after graduation with my supervisor, Dr. Segun Adebayo. The resulting paper, **Stable Semantic Perception for Embedded Robots**, was accepted at MIRG ICAIR 2026 and presented on 3 November 2026.
 
-**GRACE** is an autonomous healthcare service robot developed as my undergraduate thesis project at Bowen University.
+## The problem
 
-The project explored how an embedded mobile robot can use visual perception and semantic scene understanding to navigate indoor healthcare environments and recognize clinically meaningful locations.
+Visual SLAM estimates camera motion and builds a geometric map, while OCR can extract useful room labels and signs. On a Raspberry Pi 5, running both continuously competes for limited computing resources. Our study investigates a practical integration that keeps semantic perception running during extended operation.
 
-The system was designed around a practical constraint: enabling autonomous navigation in environments where expensive infrastructure such as LiDAR or external positioning systems may not be available.
+## What I implemented
 
-### Research Motivation
+- A C++17 wrapper around monocular ORB-SLAM3, alongside Python Tesseract OCR and a Python semantic landmark log.
+- Separate processes and sparse image sharing, with one camera owner and atomic image-file updates.
+- A translational-stability heuristic that gates OCR processing using a recent window of valid SLAM translations.
+- Approximate association of recognized text with the latest valid pose, using a fixed-depth projection and repeated observations to merge candidate landmarks.
 
-Healthcare environments contain many visually meaningful cues, such as room names, signs, and labels, that can help robots understand where they are and where they need to go.
+The gate schedules semantic work; it is not a calibrated safety guarantee. The OCR and SLAM streams are asynchronous, so their pose association is approximate rather than exact timestamp alignment.
 
-Rather than relying solely on geometric localization, GRACE combines **visual SLAM with text recognition** to associate physical locations with semantic information.
+## The recorded run
 
-This creates a perception pipeline that allows a robot to reason about both:
+The platform was teleoperated through a simulated clinical corridor with signs such as WARD, THEATRE and EMERGENCY.
 
-- **Where am I?**
-- **What does this location represent?**
+| Measure | Retained result |
+| --- | --- |
+| Continuous operation | 102 minutes |
+| Processed camera frames | 74,750 |
+| Observed system crashes | 0 |
+| Peak resident memory | Below 3 GB |
 
-### System Architecture
+These are results from one sustained run of the combined configuration. They support the feasibility of this implementation under the tested conditions.
 
-The robot integrates:
+## Interpretation and limits
 
-- Raspberry Pi 5
-- Microsoft LifeCam Cinema HD camera
-- ORB-SLAM3
-- EasyOCR
-- Embedded navigation
-- Ultrasonic sensors
-- 4WD mobile robot platform
-- Flask-based teleoperation interface
+The historical **0.28 m figure is aligned trajectory self-consistency RMSE**, obtained from estimates of the same SLAM system. It is not external localization accuracy or an error against independent ground truth.
 
-### Perception Pipeline
+Monocular scale, fixed-depth projection and asynchronous pose association limit the geometric interpretation of semantic landmarks. Repeated text detections are not proof of correct recognition. This study does not establish a benchmark OCR accuracy or isolate the gate's causal benefit through an ablation.
 
-The core pipeline combines visual localization and semantic recognition:
+The experiment did not demonstrate autonomous navigation or operation in a working hospital. The accepted implementation is also not a completed ROS2 system. Those remain directions for further development.
 
-**Camera → ORB-SLAM3 → Camera Pose**
+## Resources
 
-and
+- [Code and retained project materials](https://github.com/PAPPY-JOE/vslam_ocr_pi5)
+- [Paper summary and status]({{ site.baseurl }}/publication/stable-semantic-perception-2026/)
+- [ICAIR presentation clip]({{ site.baseurl }}/talks/#icair-2026)
 
-**Camera → OCR → Textual Semantic Information**
-
-The system then associates recognized text with estimated camera poses using timestamp alignment.
-
-This allows labels such as **WARD** or **CLINIC** to become spatially meaningful landmarks within the robot's map.
-
-### Technical Challenges
-
-Running the complete perception pipeline on a Raspberry Pi 5 introduced significant computational constraints.
-
-I worked on integrating:
-
-- Visual SLAM
-- OCR
-- Camera processing
-- Pose estimation
-- Semantic association
-- Embedded computation
-
-within a resource-constrained robotic platform.
-
-### Experimental Setup
-
-A small-scale indoor clinical environment was constructed to evaluate the system.
-
-The test environment incorporated signage representing healthcare locations and was designed to evaluate whether the robot could associate recognized text with spatial locations.
-
-### Results
-
-The system achieved approximately:
-
-- **0.28 m Absolute Pose Error RMSE**
-- **>90% semantic association accuracy** at a confidence threshold of 0.80
-
-The results demonstrated the feasibility of combining visual localization with semantic text recognition on low-cost embedded hardware.
-
-### Research Contribution
-
-The project explored an alternative approach to semantic navigation for healthcare robots by combining **geometry-aware visual localization with textual scene understanding**.
-
-Rather than treating OCR as an independent perception task, the system incorporated recognized text into the robot's spatial representation.
-
-### Applications
-
-The approach could support future robotic systems for:
-
-- Healthcare facility navigation
-- Delivery of supplies
-- Patient assistance
-- Hospital logistics
-- Indoor service robotics
-- Infrastructure-free robotic deployment
-
-### Broader Research Direction
-
-GRACE shaped my current research interests in:
-
-- Autonomous navigation
-- Visual perception
-- Embedded AI
-- Safe robotic systems
-- Perception-driven control
-- Healthcare robotics
-- Robotics in unstructured environments
-
-It also motivated my interest in developing autonomous systems that can operate reliably when sensing is noisy, computational resources are limited, and real-world environments are unpredictable.
-
-### Recognition
-
-The work builds on my broader research experience presented through the **AAAI Undergraduate Consortium** and my subsequent work in embedded AI and robotics.
-
-### Code
-
-The implementation and selected components of the project are available on GitHub.
-
-### Reflection
-
-GRACE was the project that moved my interest in robotics from building individual components toward investigating how **perception, localization, semantics, and physical action can be integrated into an autonomous system**.
-
-It remains the foundation of my current interest in intelligent and trustworthy autonomous robots.
+The final proceedings link will be added when available.
+</div>

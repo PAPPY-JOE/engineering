@@ -1,8 +1,11 @@
 ---
+layout: research
 
 title: 'Embedded Plant Classification on XIAO ESP32S3 Sense Using Edge Impulse'
 date: 2026-05-28
-permalink: /posts/2026/05/embedded-plant-classification-edge-impulse
+permalink: /posts/2026/05/embedded-plant-classification-edge-impulse/
+redirect_from:
+  - /posts/2026/05/embedded-plant-classification-edge-impulse.html
 
 tags:
     - embedded AI
@@ -81,8 +84,6 @@ The best-performing model achieved:
 * **Precision:** 82%
 * **Recall:** 87%
 * **F1-score:** 84.5%
-* **Top-1 accuracy:** 100%
-* **Top-3 accuracy:** 85.7%
 
 The model was subsequently deployed to the **XIAO ESP32S3 Sense** and tested using live camera input.
 

@@ -1,7 +1,10 @@
 ---
+layout: research
 title: 'Real-Time Fruit Classification with Edge Impulse'
 date: 2023-04-22
-permalink: /posts/2023/04/real-time-fruit-classification-edge-impulse
+permalink: /posts/2023/04/real-time-fruit-classification-edge-impulse/
+redirect_from:
+  - /posts/2023/04/real-time-fruit-classification-edge-impulse.html
 
 tags:
   - embedded AI

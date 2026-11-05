@@ -1,8 +1,11 @@
 ---
+layout: research
 
 title: 'Tele-operated Surveillance Robot with ESP32-CAM and Firebase'
 date: 2024-10-01
-permalink: /posts/2024/10/tele-operated-surveillance-robot
+permalink: /posts/2024/10/tele-operated-surveillance-robot/
+redirect_from:
+  - /posts/2024/10/tele-operated-surveillance-robot.html
 
 tags:
   - robotics

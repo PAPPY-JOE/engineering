@@ -1,8 +1,11 @@
 ---
+layout: research
 
 title: 'Sunflower Solar Tracker System'
 date: 2024-02-07
-permalink: /posts/2024/02/sunflower-solar-tracker
+permalink: /posts/2024/02/sunflower-solar-tracker/
+redirect_from:
+  - /posts/2024/02/sunflower-solar-tracker.html
 
 tags:
   - mechatronics
