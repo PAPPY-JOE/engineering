@@ -21,7 +21,7 @@ repository               : "PAPPY-JOE/engineering"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "Portrait.jpeg"
+  avatar           : "research/joseph-fatoye.jpg"
   name             : "Joseph Olayemi Fatoye"
   pronouns         : # "he/him"
   bio              : "Mechatronics engineer working on reliable visual perception and embedded robotic systems."

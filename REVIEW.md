@@ -5,7 +5,8 @@ Prepared on `update/research-portfolio-2026-11-05`. No deployment or merge is im
 ## Changes
 
 - New academic home, research, publications, talks, CV and contact pages.
-- Real GRACE image and ICAIR conference footage; no generated imagery.
+- User-selected formal portrait, real GRACE image and ICAIR conference footage.
+- Navigation remains visible while scrolling on desktop and mobile.
 - Accepted and presented ICAIR status, with final proceedings link pending.
 - Corrected GRACE results and scope, including self-consistency RMSE interpretation.
 - Actual CV page and updated existing PDF download.
@@ -20,9 +21,9 @@ Prepared on `update/research-portfolio-2026-11-05`. No deployment or merge is im
 - Existing real project URLs are retained.
 - A research master's is the primary graduate interest; funded PhD enquiries remain welcome.
 
-## Before publication
+## Publication approval
 
-Review the preview and approve publication. The live `master` branch is not changed by this local revision.
+Joseph approved deployment after replacing the hero image with one of three supplied portraits, then requested a header that remains visible while scrolling. The formal suit portrait was selected.
 
 ## Verification
 
@@ -32,5 +33,6 @@ Review the preview and approve publication. The live `master` branch is not chan
 - Captioned MP4 metadata loads: 91 seconds, 1280 x 720, no media error.
 - Prior project `.html` URLs retain generated redirects to their canonical directory URLs.
 - `git diff --check` passed.
+- Updated portrait and sticky header checked at desktop and mobile widths.
 
-The full GitHub Pages deployment has not been run, and the revision has not been pushed publicly.
+These checks precede publication. The GitHub Pages workflow records the production deployment result.
