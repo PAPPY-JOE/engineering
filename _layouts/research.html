@@ -3,6 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+    (function () {
+      var saved;
+      try { saved = localStorage.getItem('joseph-fatoye-theme'); } catch (error) {}
+      document.documentElement.dataset.theme = saved === 'light' || saved === 'dark'
+        ? saved : (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    }());
+  </script>
   <title>{% if page.home %}Joseph Fatoye | Robotic perception &amp; embedded systems{% else %}{{ page.title | escape }} | Joseph Fatoye{% endif %}</title>
   <meta name="description" content="{{ page.description | default: site.description | escape }}">
   <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
@@ -20,9 +28,9 @@
   <header class="site-header">
     <div class="header-inner">
       <a class="wordmark" href="{{ site.baseurl }}/" {% if page.home %}aria-current="page"{% endif %}>Joseph Fatoye<span>Robotic perception &amp; embedded systems</span></a>
-      <nav aria-label="Main navigation">
+      <div class="header-actions"><nav aria-label="Main navigation">
         {% for item in site.data.navigation.main %}<a href="{{ site.baseurl }}{{ item.url }}" {% if page.url == item.url %}aria-current="page"{% endif %}>{{ item.title }}</a>{% endfor %}
-      </nav>
+      </nav><button id="theme-toggle" class="theme-toggle" type="button" aria-label="Dark mode" aria-pressed="false" title="Switch to dark mode" hidden><svg class="theme-icon-moon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M20.5 14A8.7 8.7 0 0 1 10 3.5 8.7 8.7 0 1 0 20.5 14Z"/></svg><svg class="theme-icon-sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg></button></div>
     </div>
   </header>
   <main id="content" class="site-main {% if page.home %}home{% else %}interior{% endif %}">
@@ -30,5 +38,6 @@
     {{ content }}
   </main>
   <footer class="site-footer"><div><strong>Joseph Fatoye</strong><p>Visual perception for robots that work in the physical world.</p></div><div><a href="mailto:fatoyejoseph@gmail.com">Email</a><a href="https://github.com/PAPPY-JOE">GitHub</a><a href="https://scholar.google.com/citations?user=NQQaE6IAAAAJ">Google Scholar</a><a href="https://www.linkedin.com/in/josephfatoye/">LinkedIn</a></div><p class="footer-note">Nigeria &middot; Updated November 2026</p></footer>
+  <script src="{{ site.baseurl }}/assets/js/theme-toggle.js" defer></script>
 </body>
 </html>

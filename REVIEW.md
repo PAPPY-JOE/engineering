@@ -8,6 +8,9 @@ Prepared on `update/research-portfolio-2026-11-05`. No deployment or merge is im
 - User-selected formal portrait, real GRACE image and ICAIR conference footage.
 - Navigation remains visible while scrolling on desktop and mobile.
 - Conference photos appear beside the relevant presentation, with event captions.
+- AAAI-24 photos support the home and talks entries; the convocation photo appears with education.
+- The ICAIR personal photo uses Joseph's preferred clearer image.
+- One theme toggle follows the system setting until a visitor makes a saved light/dark choice.
 - Accepted and presented ICAIR status, with final proceedings link pending.
 - Corrected GRACE results and scope, including self-consistency RMSE interpretation.
 - Actual CV page and updated existing PDF download.
@@ -35,5 +38,6 @@ Joseph approved deployment after replacing the hero image with one of three supp
 - Prior project `.html` URLs retain generated redirects to their canonical directory URLs.
 - `git diff --check` passed.
 - Updated portrait and sticky header checked at desktop and mobile widths.
+- Eight theme and media checks cover system defaults, system changes, keyboard interaction, saved choices, blocked storage, no-JavaScript fallback and 320px layouts.
 
 These checks precede publication. The GitHub Pages workflow records the production deployment result.
