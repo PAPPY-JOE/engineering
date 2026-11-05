@@ -7,6 +7,7 @@ Prepared on `update/research-portfolio-2026-11-05`. No deployment or merge is im
 - New academic home, research, publications, talks, CV and contact pages.
 - User-selected formal portrait, real GRACE image and ICAIR conference footage.
 - Navigation remains visible while scrolling on desktop and mobile.
+- Conference photos appear beside the relevant presentation, with event captions.
 - Accepted and presented ICAIR status, with final proceedings link pending.
 - Corrected GRACE results and scope, including self-consistency RMSE interpretation.
 - Actual CV page and updated existing PDF download.

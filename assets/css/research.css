@@ -3,6 +3,10 @@
 @media(max-width:900px){.header-inner{align-items:start}.wordmark span{max-width:200px}nav{gap:15px}.hero{grid-template-columns:1fr 200px;gap:35px;padding-top:50px}.portrait img{width:200px}.featured-project{gap:25px}.conference{grid-template-columns:1fr 1fr}.site-footer{margin:0 32px}.facts strong{font-size:1.3rem}}
 @media(max-width:640px){body{font-size:16px}.header-inner{display:block;padding:20px 22px}nav{margin-top:18px;gap:18px}.wordmark span{max-width:none}.site-main{padding:0 22px}.hero{grid-template-columns:1fr;gap:28px;padding:40px 0}.hero h1{font-size:2.75rem}.hero .lead{font-size:1.05rem}.portrait{display:grid;grid-template-columns:90px 1fr;gap:16px;align-items:center}.portrait img{width:90px;height:100px;aspect-ratio:auto}.portrait figcaption{margin:0;max-width:200px;border:0;padding:0}.opportunity{grid-template-columns:1fr;gap:7px;padding:19px 20px;margin-bottom:40px}.section{padding-bottom:40px}.section-heading{padding-top:22px;margin-bottom:23px}.section-heading h2{font-size:1.8rem}.featured-project,.conference{grid-template-columns:1fr;gap:24px}.project-photo{max-height:350px}.research-row{grid-template-columns:1fr;gap:6px}.news-list li{grid-template-columns:1fr;gap:4px}.site-footer{margin:0 22px;grid-template-columns:1fr;padding-top:25px}.site-footer>div:nth-child(2){gap:18px}.page-heading{padding-top:38px}.page-heading h1{font-size:2.6rem}.facts{gap:10px}.facts strong{font-size:1.35rem}.facts span{font-size:.71rem}}
 /* Keep navigation available without hiding section anchors beneath it. */
+.event-intro{display:grid;grid-template-columns:minmax(0,1fr) 200px;gap:35px;align-items:start;margin:25px 0}
+.event-intro h2{margin-top:0}
+.event-photo img{width:200px;aspect-ratio:3/4;object-fit:cover}
+@media(max-width:640px){.event-intro{grid-template-columns:1fr;gap:16px}.event-photo{max-width:240px}.event-photo img{width:240px}}
 html{scroll-padding-top:120px}
 .site-header{position:sticky;top:0;z-index:100;background:var(--paper)}
 @media(max-width:640px){html{scroll-padding-top:140px}}
