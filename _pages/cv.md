@@ -6,7 +6,7 @@ redirect_from:
   - /resume
 description: "Education, research experience and selected recognition."
 ---
-<div class="cv-download"><p><a href="{{ site.baseurl }}/files/Joseph_Fatoye_CV.pdf">Download my research CV (PDF, 2 pages)</a><br><span class="small">October 2026 version. The ICAIR paper was subsequently presented on 3 November 2026.</span></p></div>
+<div class="cv-download"><p><a href="{{ site.baseurl }}/files/Joseph_Fatoye_CV.pdf">Download my research CV (PDF, 2 pages)</a><br><span class="small">Updated November 2026. Includes the published MIRG-ICAIR 2026 paper, pp. 119-126.</span></p></div>
 <div class="prose" markdown="1">
 <section class="education-block" aria-labelledby="education-heading"><div><h2 id="education-heading">Education</h2><p><strong>B.Eng., Mechatronics Engineering, Bowen University, Nigeria</strong><br>First Class Honours, November 2025. CGPA: <strong>4.89/5.00</strong>; rank: <strong>1/50</strong>.<br>Best Graduating Student, Department of Mechatronics Engineering.</p><p><strong>University of Ilorin, Nigeria</strong><br>Mechanical Engineering coursework, September 2019 to October 2022; transferred to Bowen University.</p></div><figure class="education-photo"><img src="{{ site.baseurl }}/images/research/bowen-convocation-2025.jpg" alt="Joseph Fatoye in graduation robes at Bowen University" width="480" height="640" loading="lazy"><figcaption>Bowen University convocation, November 2025.</figcaption></figure></section>
 

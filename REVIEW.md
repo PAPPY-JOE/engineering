@@ -41,3 +41,7 @@ Joseph approved deployment after replacing the hero image with one of three supp
 - Eight theme and media checks cover system defaults, system changes, keyboard interaction, saved choices, blocked storage, no-JavaScript fallback and 320px layouts.
 
 These checks precede publication. The GitHub Pages workflow records the production deployment result.
+
+## Printed publication confirmation - 6 November 2026
+
+Joseph supplied the printed citation confirming the conference proceedings title, publisher, year 2026 and pages 119-126. Publication pages now say published. The public CV includes the printed pagination. No DOI or online proceedings URL has been invented.

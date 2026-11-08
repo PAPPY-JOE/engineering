@@ -12,7 +12,7 @@ tags: [robotics, visual SLAM, embedded AI, OCR]
 <div class="prose" markdown="1">
 ![GRACE mobile robotic platform]({{ site.baseurl }}/images/research/grace-robot.jpg)
 
-GRACE began as my undergraduate final-year project in Mechatronics Engineering at Bowen University. I continued the research after graduation with my supervisor, Dr. Segun Adebayo. The resulting paper, **Stable Semantic Perception for Embedded Robots**, was accepted at MIRG ICAIR 2026 and presented on 3 November 2026.
+GRACE began as my undergraduate final-year project in Mechatronics Engineering at Bowen University. I continued the research after graduation with my supervisor, Dr. Segun Adebayo. The resulting paper, **Stable Semantic Perception for Embedded Robots**, is published in the MIRG-ICAIR 2026 conference proceedings (pp. 119-126) and was presented on 3 November 2026.
 
 ## The problem
 
@@ -46,7 +46,7 @@ The historical **0.28 m figure is aligned trajectory self-consistency RMSE**, ob
 
 Monocular scale, fixed-depth projection and asynchronous pose association limit the geometric interpretation of semantic landmarks. Repeated text detections are not proof of correct recognition. This study does not establish a benchmark OCR accuracy or isolate the gate's causal benefit through an ablation.
 
-The experiment did not demonstrate autonomous navigation or operation in a working hospital. The accepted implementation is also not a completed ROS2 system. Those remain directions for further development.
+The experiment did not demonstrate autonomous navigation or operation in a working hospital. The published implementation is also not a completed ROS2 system. Those remain directions for further development.
 
 ## Resources
 
@@ -54,5 +54,5 @@ The experiment did not demonstrate autonomous navigation or operation in a worki
 - [Paper summary and status]({{ site.baseurl }}/publication/stable-semantic-perception-2026/)
 - [ICAIR presentation clip]({{ site.baseurl }}/talks/#icair-2026)
 
-The final proceedings link will be added when available.
+An online proceedings link will be added when available.
 </div>
