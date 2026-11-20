@@ -8,6 +8,7 @@ publication_status: "Published"
 venue: "Proceedings of the 6th International Conference on Artificial Intelligence and Robotics (MIRG-ICAIR 2026)"
 pages: "119-126"
 publication_year: 2026
+paperurl: "/engineering/files/Stable_Semantic_Perception_Embedded_Robots_Accepted_Manuscript.pdf"
 excerpt: "Sustained visual SLAM and asynchronous OCR on a Raspberry Pi 5."
 description: "J. Fatoye and S. Adebayo. Published in the MIRG-ICAIR 2026 proceedings, pp. 119-126; presented on 3 November 2026."
 ---
@@ -15,6 +16,14 @@ description: "J. Fatoye and S. Adebayo. Published in the MIRG-ICAIR 2026 proceed
 **J. Fatoye and S. Adebayo**
 
 **Status:** Published in the printed MIRG-ICAIR 2026 conference proceedings, pages **119-126**. Presented at the University of Lagos on 3 November 2026.
+
+## Read the paper
+
+[Author's accepted manuscript (PDF)]({{ site.baseurl }}/files/Stable_Semantic_Perception_Embedded_Robots_Accepted_Manuscript.pdf)
+
+This is the final revised manuscript submitted to ICAIR on 6 October 2026, shared here as a PDF. Formatting and pagination differ from the published proceedings version. The manuscript text is unchanged.
+
+The published article's copyright notice identifies the authors as copyright holders and specifies [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International](https://creativecommons.org/licenses/by-nc-nd/4.0/). Please cite the published article below.
 
 ## Citation
 
